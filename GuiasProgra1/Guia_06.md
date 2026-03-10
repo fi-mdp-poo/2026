@@ -1,64 +1,79 @@
 # Guía de Trabajos Prácticos - Unidad 6
-## Materia: Programación I
+## Materia: Programación 1
 
 ## Ejercicios de la Práctica
 
-Unidad Nº 6/Punteros, strings, asignación dinámica de memoria: Actividades sugeridas.
-Preguntas orientadoras
-De acuerdo a lo mencionado en filminas anteriores, identifique la potencialidad del tipo de variable puntero. ¿Qué cuestiones resuelve?. 
-Complete los siguientes espacios.
-Un puntero es una variable que contiene como valor _______.
-Los tres valores que pueden utilizarse para inicializar un puntero son ______, _______, _________.
-El operador ______ regresa la posición en memoria donde está almacenado su operando.
-El operador ______ regresa el valor del objeto hacia el cual apunta su operando.
-La función________ se utiliza para asignar memoria de forma dinámica.
-La función _______ asigna memoria dinámicamente para un arreglo que inicializa los elementos a cero.
-La función ________ modifica el tamaño de un bloque de memoria previamente asignada.
-La función ________ libera la zona de memoria para que pueda ser reutilizada.
+Unidad Nº 6: Punteros, strings y asignación dinámica de memoria
 
-Para cada una de las siguientes, escriba un enunciado que  ejecute la tarea indicada. Suponga que se han declarado las variables de punto flotante number1=7.3 y number2.
-Declare la variable fptr que sea un puntero a un flotante.
-Asigne la dirección de la variable number1 al puntero fptr.
-Imprima el valor del objeto señalado por fptr.
-Asigne el valor del objeto al que señala con fptr a la variable number2.
-Imprima el valor de number2.
-Imprima la dirección de number1 utilizando %p.
-Imprima la dirección almacenada en fptr. Utilice el especificador de conversión %p.
+### Preguntas orientadoras
 
-Escriba un enunciado para cada una de las siguientes operaciones. Suponga que la variable c de tipo int, y las variables d, e, y f del tipo float, la variable cptr es del tipo char* y los arreglos s1[100] y s2[100] son del tipo char.
-Convierta en una letra mayúscula, el caracter almacenado en c y asigne el mismo a c.
-Determine si lo almacenado en c es un dígito.
-Convierta la cadena "1234567" a long e imprima el valor.
-Determine si el valor de la variable c es un caracter de control.
-Lea desde el teclado una línea de texto al arreglo s1. No utilice scanf.
-Imprima lo almacenado en s1 sin utilizar printf. 
-Asigne a ptr la posición de la última ocurrencia de c en s1.
-Imprima el valor de c sin utilizar printf.
-Convierta la cadena "8.63582" a double e imprima el valor.
-Determine si el valor de c es una letra.
-Lea un caracter del teclado y almacene dicho carácter en c.
-Asigne a ptr la posición de la primer ocurrencia de s2 en s1.
-Determine si el valor de c es un caracter de impresión.
-Lea los valores float a partir de la cadena "1.37 10.3 9.432".
-Copie la cadena almacenada en s2 al arreglo s1.
-Compare la cadena s1 con la cadena s2 e imprima el resultado.
-Agregue 10 caracteres de la cadena en s2 a s1.
-Determine la longitud de s1 e imprima el resultado.
-Convierta la cadena "-21" a int e imprima el valor.
+1) De acuerdo a lo mencionado en filminas anteriores, identifique la potencialidad del tipo de variable puntero. ¿Qué cuestiones resuelve?
 
-Ejercicios
+2) Complete los siguientes espacios:
+   - Un puntero es una variable que contiene como valor _______.
+   - Los tres valores que pueden utilizarse para inicializar un puntero son ______, _______, _________.
+   - El operador `______` regresa la posición en memoria donde está almacenado su operando.
+   - El operador `______` regresa el valor del objeto hacia el cual apunta su operando.
+   - La función `______` se utiliza para asignar memoria de forma dinámica.
+   - La función `______` asigna memoria dinámicamente para un arreglo que inicializa los elementos a cero.
+   - La función `______` modifica el tamaño de un bloque de memoria previamente asignada.
+   - La función `______` libera la zona de memoria para que pueda ser reutilizada.
+
+3) Para cada una de las siguientes, escriba un enunciado que ejecute la tarea indicada. Suponga que se han declarado las variables de punto flotante `number1 = 7.3` y `number2`:
+   - Declare la variable `fptr` que sea un puntero a un flotante.
+   - Asigne la dirección de la variable `number1` al puntero `fptr`.
+   - Imprima el valor del objeto señalado por `fptr`.
+   - Asigne el valor del objeto al que señala con `fptr` a la variable `number2`.
+   - Imprima el valor de `number2`.
+   - Imprima la dirección de `number1` utilizando `%p`.
+   - Imprima la dirección almacenada en `fptr`. Utilice el especificador de conversión `%p`.
+
+4) Escriba un enunciado para cada una de las siguientes operaciones. Suponga que la variable `c` de tipo `int`, las variables `d`, `e`, y `f` del tipo `float`, la variable `cptr` es del tipo `char*` y los arreglos `s1[100]` y `s2[100]` son del tipo `char`:
+   - Convierta en una letra mayúscula el carácter almacenado en `c` y asigne el mismo a `c`.
+   - Determine si lo almacenado en `c` es un dígito.
+   - Convierta la cadena `"1234567"` a `long` e imprima el valor.
+   - Determine si el valor de la variable `c` es un carácter de control.
+   - Lea desde el teclado una línea de texto al arreglo `s1`. No utilice `scanf`.
+   - Imprima lo almacenado en `s1` sin utilizar `printf`.
+   - Asigne a `ptr` la posición de la última ocurrencia de `c` en `s1`.
+   - Imprima el valor de `c` sin utilizar `printf`.
+   - Convierta la cadena `"8.63582"` a `double` e imprima el valor.
+   - Determine si el valor de `c` es una letra.
+   - Lea un carácter del teclado y almacene dicho carácter en `c`.
+   - Asigne a `ptr` la posición de la primera ocurrencia de `s2` en `s1`.
+   - Determine si el valor de `c` es un carácter de impresión.
+   - Lea los valores `float` a partir de la cadena `"1.37 10.3 9.432"`.
+   - Copie la cadena almacenada en `s2` al arreglo `s1`.
+   - Compare la cadena `s1` con la cadena `s2` e imprima el resultado.
+   - Agregue 10 caracteres de la cadena en `s2` a `s1`.
+   - Determine la longitud de `s1` e imprima el resultado.
+   - Convierta la cadena `"-21"` a `int` e imprima el valor.
+
+### Ejercicios
+
 1) En la siguiente imagen se muestra una función que permite calcular el valor promedio de un vector de N flotantes. Reescriba la función mediante notación y aritmética de punteros.
 
-2) Escribir un programa que permita ordenar de manera ascendente y descendente un vector de enteros de longitud desconocida. Nota: No se puede usar la función de librería qsort, usted debe investigar los algoritmos de ordenamiento por su cuenta.
-3) Escribir un programa que permita testear una función llamada longitud_cadena, la cual debe recibir un puntero a char y retornar la cantidad de caracteres incluido el carácter "\n".
-4) Escribir un programa que permita testear una función propia, que realice la misma operación que la función de librería strcopy.
-5) Escribir un programa que permita sumar dos matrices de las mismas dimensiones. El usuario debe ingresar la cantidad de filas y columnas de cada una, luego se debe mostrar en pantalla el resultado. Nota: Suponga la que las matrices son A y B, entonces el resultado de la suma se debe guardar en A.
+2) Escribir un programa que permita ordenar de manera ascendente y descendente un vector de enteros de longitud desconocida.
 
-6) Escribir un programa que permita ingresar una matriz de mxn, calcular la matriz transpuesta de la matriz ingresada e imprimir el resultado en pantalla. Nota: Intente encontrar la solución más eficiente.
+> **Nota:** No se puede usar la función de librería `qsort`, usted debe investigar los algoritmos de ordenamiento por su cuenta.
 
+3) Escribir un programa que permita testear una función llamada `longitud_cadena`, la cual debe recibir un puntero a `char` y retornar la cantidad de caracteres incluido el carácter `'\n'`.
 
-Actividades extra
+4) Escribir un programa que permita testear una función propia, que realice la misma operación que la función de librería `strcpy`.
+
+5) Escribir un programa que permita sumar dos matrices de las mismas dimensiones. El usuario debe ingresar la cantidad de filas y columnas de cada una, luego se debe mostrar en pantalla el resultado.
+
+> **Nota:** Suponga que las matrices son A y B, entonces el resultado de la suma se debe guardar en A.
+
+6) Escribir un programa que permita ingresar una matriz de m×n, calcular la matriz transpuesta de la matriz ingresada e imprimir el resultado en pantalla.
+
+> **Nota:** Intente encontrar la solución más eficiente.
+
+### Actividades extra
+
 1) Refactorice el ejercicio Extra 1 de la guía 5.1 haciendo uso de punteros.
+
+---
 
 ## Ejercicios de Exámenes Anteriores
 
@@ -171,10 +186,10 @@ d) Explique cómo se comporta la función `realloc` según los diferentes valore
 
 | Buffer | Size en bytes | Comportamiento |
 |--------|--------------|----------------|
-| NULL   | 0            | |
-| NULL   | ≠ 0          | |
-| ≠ NULL | 0            | |
-| ≠ NULL | ≠ 0          | |
+| `NULL`   | 0            | |
+| `NULL`   | ≠ 0          | |
+| ≠ `NULL` | 0            | |
+| ≠ `NULL` | ≠ 0          | |
 
 ---
 
@@ -212,6 +227,7 @@ El programa debe:
 4. Guardar en el archivo de salida reutilizando la misma función que imprime en pantalla.
 
 Datos de prueba en caso de no poder leer el archivo binario:
+
 ```c
 {
     {12, "Tom y Jerry",      {56, 225, 1122331}},

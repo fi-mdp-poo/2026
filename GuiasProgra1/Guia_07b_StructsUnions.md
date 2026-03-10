@@ -1,5 +1,5 @@
 # Guía de Trabajos Prácticos - Unidad 7b
-## Materia: Programación I
+## Materia: Programación 1
 ### Estructuras, Uniones y Typedef en C
 
 > Esta guía cubre el uso de estructuras (`struct`), uniones (`union`) y alias de tipo (`typedef`) en C/C++, fundamentales en programación de sistemas embebidos e interfaces de bajo nivel.

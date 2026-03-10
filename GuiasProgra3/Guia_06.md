@@ -1,5 +1,5 @@
-# Guía de Trabajos Prácticos - Unidad 6
-## Materia: Programación III
+﻿# Guía de Trabajos Prácticos - Unidad 6
+## Materia: Programación 3
 
 ## Ejercicios de la Práctica
 

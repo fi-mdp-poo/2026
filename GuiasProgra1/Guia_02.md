@@ -1,44 +1,66 @@
 # Guía de Trabajos Prácticos - Unidad 2
-## Materia: Programación I
+## Materia: Programación 1
 
 ## Ejercicios de la Práctica
 
-Unidad Nº 2
-Actividades sugeridas: 
-Preguntas orientadoras 
-1) Mencione por qué resulta de importancia que un dato tenga un tipo de dato  asociado.  
-2) Identifique los tipos de datos mencionados en clase y verifique el rango (valores mínimo y máximo) de cada uno de acuerdo al tamaño establecido.  
-3) Mencione en qué casos se utiliza el tipo de dato void. 
-4) Escriba el formato de declaración de los tipos de datos variables y constantes y mencione  cuál es la diferencia entre ambos. 
-5) Indique en qué casos se utiliza el casting y piense cuáles pueden ser los riesgos al utilizarlo. Dé ejemplos. 
-6) Indique qué ocurre cuando se realiza una operación entre datos de diferente tipo. 
-7) Establezca la diferencia entre el operador == y el operador =. Piense en ejemplos. 
-8) Genere el esqueleto básico de un programa en C (archivos de cabecera, funciones,  programa principal). 
-9) Enumere las ventajas de generar funciones o subprogramas. 
-10) Identifique cuál es la diferencia entre la declaración, la definición y la invocación de una  función. Muestre en qué parte del programa va ubicada cada una y por último realice un  ejemplo. 
-11) Mencione qué significa pasar parámetros por valor. 
-12) Analice las distintas formas de finalizar un programa y piense qué implicancias tiene  cada una.  
-13) Muestre la diferencia entre las funciones printf y puts. Respecto de printf, identifique  cuál es su "potencialidad" y también cuál es su "peligrosidad".  
-Ejercicios 
-1) ¿Cuál es la salida que produce las siguientes llamadas a la función printf? a) printf("%6d,%4d",86,1040) 
-b) printf("%12.5e",30.253) 
-c) printf("%.4f",83.162) 
-d) printf("%-6.2g",.0000009979) 
-2) Escriba el formato que debe incluirse en la función printf para que se muestre una variable x de tipo float en los  siguientes casos:
-Notación Exponencial; justificado a la izquierda en un campo de tamaño 8 y 1 dígito después del punto decimal.
-Notación Exponencial; justificado a la derecha en un campo de tamaño 10 y 6 dígitos  después del punto decimal.
-Notación decimal fija; justificada a la izquierda en un campo de tamaño 8 y 3 dígitos  después del punto decimal. 
-Notación decimal fija; justificada a la derecha en un campo de tamaño 6; sin dígitos  después del punto decimal. 
-3) Suponga que se llama a la función scanf: scanf("%d%f%d",&i, &x, &j) 
-Si el usuario ingresa: 10.3 5 6<enter> 
-¿Cuáles serán los valores de i, x y j suponiendo que i y j son variables de tipo int y x es variable de tipo float? 
-4) Escribir un programa que permita ingresar un código ASCII, por ejemplo el 66, y luego  imprima el caracter al cual corresponde. 
-5) La masa de una molécula de agua es aproximadamente 3.10E-23 g. Una pinta de agua pesa aproximadamente 425 gramos. Escribir un programa que solicite una cantidad de agua (en pintas) y muestre el número de moléculas de agua correspondiente. 
-6) Escriba un programa que permita al usuario ingresar una fecha en el formato (dd/mm/yyyy) y la imprima en formato yyyymmdd.
+Unidad Nº 2: Tipos de datos y E/S
 
-Actividades extra 
-1) Los libros se identifican con un número ISBN (International Standard Book Number). Los ISBNs asignados después del 1 de enero del 2007 contiene 13 dígitos, dispuestos en 5 grupos: 978-0-393-97950-3 (ejemplo). El primer grupo (prefijo GSI) puede ser  978 o 979. El identificador de grupo especifica el lenguaje o país de origen (por ejemplo,  0 o 1 se utilizan para países de habla inglesa). El código del editor identifica el editor (393 es el código de W. W. Norton). El número de artículo es el identificador que el editor le asigna a cada libro (97950 es en este caso). El grupo final es un dígito verificador que se usa para verificar la exactitud de los dígitos  precedentes. Escribir un programa que separe en grupos un ISBN ingresado por el usuario. (Nota: el número de dígitos de cada grupo puede variar, es decir, no se puede asumir que los  grupos van a tener la cantidad de dígitos del ejemplo. Probar el programa con varios  ISBNs de libros conocidos). 
-2) Utilizando printf, el caracter asterisco (*) y el caracter suma (+) mostrar un dibujo en  pantalla.
+### Preguntas orientadoras
+
+1) Mencione por qué resulta de importancia que un dato tenga un tipo de dato asociado.
+2) Identifique los tipos de datos mencionados en clase y verifique el rango (valores mínimo y máximo) de cada uno de acuerdo al tamaño establecido.
+3) Mencione en qué casos se utiliza el tipo de dato `void`.
+4) Escriba el formato de declaración de los tipos de datos variables y constantes y mencione cuál es la diferencia entre ambos.
+5) Indique en qué casos se utiliza el casting y piense cuáles pueden ser los riesgos al utilizarlo. Dé ejemplos.
+6) Indique qué ocurre cuando se realiza una operación entre datos de diferente tipo.
+7) Establezca la diferencia entre el operador `==` y el operador `=`. Piense en ejemplos.
+8) Genere el esqueleto básico de un programa en C (archivos de cabecera, funciones, programa principal).
+9) Enumere las ventajas de generar funciones o subprogramas.
+10) Identifique cuál es la diferencia entre la declaración, la definición y la invocación de una función. Muestre en qué parte del programa va ubicada cada una y por último realice un ejemplo.
+11) Mencione qué significa pasar parámetros por valor.
+12) Analice las distintas formas de finalizar un programa y piense qué implicancias tiene cada una.
+13) Muestre la diferencia entre las funciones `printf` y `puts`. Respecto de `printf`, identifique cuál es su "potencialidad" y también cuál es su "peligrosidad".
+
+### Ejercicios
+
+1) ¿Cuál es la salida que produce las siguientes llamadas a la función `printf`?
+
+```c
+a) printf("%6d,%4d", 86, 1040)
+b) printf("%12.5e", 30.253)
+c) printf("%.4f", 83.162)
+d) printf("%-6.2g", .0000009979)
+```
+
+2) Escriba el formato que debe incluirse en la función `printf` para que se muestre una variable `x` de tipo `float` en los siguientes casos:
+   - Notación exponencial; justificado a la izquierda en un campo de tamaño 8 y 1 dígito después del punto decimal.
+   - Notación exponencial; justificado a la derecha en un campo de tamaño 10 y 6 dígitos después del punto decimal.
+   - Notación decimal fija; justificada a la izquierda en un campo de tamaño 8 y 3 dígitos después del punto decimal.
+   - Notación decimal fija; justificada a la derecha en un campo de tamaño 6; sin dígitos después del punto decimal.
+
+3) Suponga que se llama a la función `scanf`:
+
+```c
+scanf("%d%f%d", &i, &x, &j)
+```
+
+Si el usuario ingresa: `10.3 5 6<enter>`. ¿Cuáles serán los valores de `i`, `x` y `j` suponiendo que `i` y `j` son variables de tipo `int` y `x` es variable de tipo `float`?
+
+4) Escribir un programa que permita ingresar un código ASCII, por ejemplo el 66, y luego imprima el carácter al cual corresponde.
+
+5) La masa de una molécula de agua es aproximadamente `3.10E-23` g. Una pinta de agua pesa aproximadamente 425 gramos. Escribir un programa que solicite una cantidad de agua (en pintas) y muestre el número de moléculas de agua correspondiente.
+
+6) Escriba un programa que permita al usuario ingresar una fecha en el formato `dd/mm/yyyy` y la imprima en formato `yyyymmdd`.
+
+### Actividades extra
+
+1) Los libros se identifican con un número ISBN (International Standard Book Number). Los ISBNs asignados después del 1 de enero del 2007 contienen 13 dígitos, dispuestos en 5 grupos: `978-0-393-97950-3` (ejemplo). El primer grupo (prefijo GSI) puede ser 978 o 979. El identificador de grupo especifica el lenguaje o país de origen. El código del editor identifica el editor. El número de artículo es el identificador que el editor le asigna a cada libro. El grupo final es un dígito verificador. Escribir un programa que separe en grupos un ISBN ingresado por el usuario.
+
+> **Nota:** el número de dígitos de cada grupo puede variar. Probar el programa con varios ISBNs de libros conocidos.
+
+2) Utilizando `printf`, el carácter asterisco (`*`) y el carácter suma (`+`) mostrar un dibujo en pantalla.
+
+---
 
 ## Ejercicios de Exámenes Anteriores
 
@@ -129,7 +151,6 @@ float k;
 scanf("\n %d %f %d", &i, &j, &k); // ENTRADA: 5.2 7 8
 printf("\n %d %d %e", i, j, k);   // IMPRIME: 5 1045220557 9.809089e-045
 ```
-
 
 ---
 

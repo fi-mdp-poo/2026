@@ -1,5 +1,5 @@
-# Guía de Trabajos Prácticos - Unidad 6b
-## Materia: Programación III
+﻿# Guía de Trabajos Prácticos - Unidad 6b
+## Materia: Programación 3
 ### C++ Moderno: Templates, STL, Smart Pointers, Move Semantics y Lambdas
 
 > Esta guía cubre las características del C++ moderno (C++11 en adelante) introducidas en la Unidad 6 extendida. Los temas se presentan en orden de complejidad creciente. Se recomienda resolver los ejercicios de cada sección antes de avanzar a la siguiente.

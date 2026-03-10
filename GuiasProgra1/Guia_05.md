@@ -1,65 +1,83 @@
 # Guía de Trabajos Prácticos - Unidad 5
-## Materia: Programación I
+## Materia: Programación 1
 
 ## Ejercicios de la Práctica
 
-Unidad Nº 5
-Actividades sugeridas: 
-Preguntas orientadoras 
-1) Indique qué es un array o arreglo. 
-2) Mencione las cosas que no se pueden hacer con un arreglo. 
-3) Muestre y ejemplifique qué ocurre si no se define de manera correcta la dimensión de un arreglo. 
-4) Complete los espacios en blanco. 
-a. Los elementos de un arreglo están relacionados entre sí por el hecho de que tienen el mismo ________ y __________. 
-b. El número utilizado para referirnos a un elemento particular de un arreglo se llama ____________. 
-c. Dado un determinado arreglo de nombre p_vector. Los cinco elementos que lo componen son: ______, _______, ______, ______, _______. 
-d. El ponerle nombre a un arreglo, indicar su tipo, y especificar el número de elementos dentro del mismo se conoce como ____________. 
-5) Declare si las siguientes afirmaciones son verdaderas o falsas. En el caso de ser falsas explique por qué. 
-a. Un arreglo puede almacenar muchos tipos diferentes de valores. 
-b. Un índice de arreglo puede ser del tipo de datos float. 
-c. Si no se inicializan todos los elementos de un arreglo, los faltantes se inicializan automáticamente con el último valor inicializado. 
-d. Un elemento individual de un arreglo que se pasa a una función, si es modificado en esa función, entonces contendrá el valor modificado. 
-6) Conteste las siguientes preguntas relacionadas con un arreglo nombrado como fracciones. 
-a. Declare el arreglo fracciones del tipo float de dimensión 8. 
-b. Indique el nombre del cuarto elemento del arreglo. 
-c. Asigne al elemento con índice 5 el valor 1.667. 
-d. Asigne al quinto elemento el valor 3.347. 
-e. Imprima todos los elementos del arreglo usando un lazo for. Muestre la salida. 
-f. Imprima el sexto elemento de fracciones con dos dígitos de precisión a la derecha del punto decimal. 
-7) Conteste las siguientes preguntas en relación a un arreglo llamado tabla. 
-a. Declare el arreglo de tipo entero de 3 columnas y 2 filas. 
-b. Indique cuántos elementos contiene el arreglo. 
-c. Utilice un lazo for para inicializar cada elemento del arreglo como la suma de sus índices. 
-d. Asigne el valor 3 al elemento de la primera fila y segunda columna. 
-e. Imprima el valor del elemento del inciso anterior. 
-8) Encuentre el error en los siguientes segmentos de programa y corrija el error. 
-a. int b[10] = {0} 
-    for(i = 0; i <= 10; i++); 
-    b[ ] = 1; 
-b. int mvalor[][] = {{1,2,3,4}{5,6,7,8}} 
-c. a[1,1] = 5; 
-d. int matriz[][2]={{2,2},{3,5}}; 
-    printf("%d", matriz); 
-Ejercicios 
-1) Declare un vector de 28 elementos tipo char e inicialícelo con el abecedario (no incluir la ñ) utilizando una estructura de repetición for. Luego mostrarlo en pantalla. 
-2) Genere una función que permite ingresar los elementos de un vector tipo char o imprima el vector previamente cargado. A la función se le deben pasar 3 datos como parámetros, el vector, la longitud del mismo y una variable que indique si se carga el vector (I) o se imprime el resultado (O). 
-3) Escriba un programa que inicialice un vector de flotantes y copie el contenido de ese vector en otro mediante una función. La invocación de la misma debería ser como se muestra a continuación: 
-4) Escriba una función que retorne el máximo valor almacenado en un vector de enteros y pruébela mediante un programa. 
-5) Escriba un programa que pida al usuario tres conjuntos de cinco números flotantes cada uno y cumpla con todo lo que sigue: 
-a. Almacenar los datos en una matriz de 3x5. 
-b. Calcular el promedio de cada fila. 
-c. Calcular el promedio de todos los valores. 
-d. Determinar el máximo entre todos los valores. 
-e. Imprimir todo lo anterior. 
-6) Realice un programa que permita al usuario ingresar un número desconocido de números enteros y almacenarlos en un vector. Se debe controlar durante el ingreso que los números no se repitan. Luego, a partir de dicho vector, calcular la suma de los valores negativos excluyendo el mínimo y el producto de los valores positivos excluyendo el máximo y el cero. 
-7) Suponga una pantalla color reducida de 80x60 píxeles en la que la primera dimensión representa el color y las dos restantes representan la posición del pixel. Realizar una función que muestre la pantalla de color azul con un rectángulo que empieza en el pixel (20,30) de 10 puntos de ancho, con ese lado de color verde, y 20 puntos de alto, con ese lado de color rojo. Para mostrar el resultado imprima cada página de color por separado. En la de color azul tiene que aparecer una B en cada posición que va pintada y cero en las posiciones que son de otro color. Lo mismo se hace con el color verde poniendo una G y con el color rojo poniendo una R. 
-8) Genere las tablas de multiplicar en una tabla de doble entrada. Crear una función que permita elegir qué rango de la tabla se quiere mostrar (Ej.: Mostrar la tabla del 3). 
+Unidad Nº 5: Arreglos y matrices
 
-Actividades extra 
-1) En una competencia de ciclismo intervienen N deportistas, cada uno realiza dos pruebas, una por tiempo y otra por número de vueltas. Se tienen tres arreglos con los siguientes datos de cada participante: nombre, tiempo en la primera prueba y número de vueltas en la segunda prueba, respectivamente. Imprimir en pantalla 5 columnas en las que se muestre para cada participante: 
-Nombre, tiempo en la primera prueba, número de vueltas en la segunda prueba, diferencia de tiempo respecto del más rápido en la primera prueba y diferencia de vueltas respecto del que hizo más vueltas en la segunda prueba. 
-2) Genere una matriz cuadrada M a partir de un vector V de N elementos enteros no nulos, de modo que: 
-Luego, imprímala en pantalla.
+### Preguntas orientadoras
+
+1) Indique qué es un array o arreglo.
+2) Mencione las cosas que no se pueden hacer con un arreglo.
+3) Muestre y ejemplifique qué ocurre si no se define de manera correcta la dimensión de un arreglo.
+4) Complete los espacios en blanco:
+   - a) Los elementos de un arreglo están relacionados entre sí por el hecho de que tienen el mismo ________ y __________.
+   - b) El número utilizado para referirnos a un elemento particular de un arreglo se llama ____________.
+   - c) Dado un determinado arreglo de nombre `p_vector`. Los cinco elementos que lo componen son: ______, _______, ______, ______, _______.
+   - d) El ponerle nombre a un arreglo, indicar su tipo, y especificar el número de elementos dentro del mismo se conoce como ____________.
+5) Declare si las siguientes afirmaciones son verdaderas o falsas. En el caso de ser falsas explique por qué:
+   - a) Un arreglo puede almacenar muchos tipos diferentes de valores.
+   - b) Un índice de arreglo puede ser del tipo de datos `float`.
+   - c) Si no se inicializan todos los elementos de un arreglo, los faltantes se inicializan automáticamente con el último valor inicializado.
+   - d) Un elemento individual de un arreglo que se pasa a una función, si es modificado en esa función, entonces contendrá el valor modificado.
+6) Conteste las siguientes preguntas relacionadas con un arreglo nombrado como `fracciones`:
+   - a) Declare el arreglo `fracciones` del tipo `float` de dimensión 8.
+   - b) Indique el nombre del cuarto elemento del arreglo.
+   - c) Asigne al elemento con índice 5 el valor `1.667`.
+   - d) Asigne al quinto elemento el valor `3.347`.
+   - e) Imprima todos los elementos del arreglo usando un lazo `for`. Muestre la salida.
+   - f) Imprima el sexto elemento de `fracciones` con dos dígitos de precisión a la derecha del punto decimal.
+7) Conteste las siguientes preguntas en relación a un arreglo llamado `tabla`:
+   - a) Declare el arreglo de tipo entero de 3 columnas y 2 filas.
+   - b) Indique cuántos elementos contiene el arreglo.
+   - c) Utilice un lazo `for` para inicializar cada elemento del arreglo como la suma de sus índices.
+   - d) Asigne el valor 3 al elemento de la primera fila y segunda columna.
+   - e) Imprima el valor del elemento del inciso anterior.
+8) Encuentre el error en los siguientes segmentos de programa y corrija el error:
+
+```c
+a) int b[10] = {0}
+   for(i = 0; i <= 10; i++);
+   b[ ] = 1;
+
+b) int mvalor[][] = {{1,2,3,4}{5,6,7,8}}
+
+c) a[1,1] = 5;
+
+d) int matriz[][2] = {{2,2},{3,5}};
+   printf("%d", matriz);
+```
+
+### Ejercicios
+
+1) Declare un vector de 28 elementos tipo `char` e inicialícelo con el abecedario (no incluir la ñ) utilizando una estructura de repetición `for`. Luego mostrarlo en pantalla.
+
+2) Genere una función que permite ingresar los elementos de un vector tipo `char` o imprima el vector previamente cargado. A la función se le deben pasar 3 datos como parámetros: el vector, la longitud del mismo y una variable que indique si se carga el vector (`I`) o se imprime el resultado (`O`).
+
+3) Escriba un programa que inicialice un vector de flotantes y copie el contenido de ese vector en otro mediante una función.
+
+4) Escriba una función que retorne el máximo valor almacenado en un vector de enteros y pruébela mediante un programa.
+
+5) Escriba un programa que pida al usuario tres conjuntos de cinco números flotantes cada uno y cumpla con todo lo que sigue:
+   - a) Almacenar los datos en una matriz de 3×5.
+   - b) Calcular el promedio de cada fila.
+   - c) Calcular el promedio de todos los valores.
+   - d) Determinar el máximo entre todos los valores.
+   - e) Imprimir todo lo anterior.
+
+6) Realice un programa que permita al usuario ingresar un número desconocido de números enteros y almacenarlos en un vector. Se debe controlar durante el ingreso que los números no se repitan. Luego, a partir de dicho vector, calcular la suma de los valores negativos excluyendo el mínimo y el producto de los valores positivos excluyendo el máximo y el cero.
+
+7) Suponga una pantalla color reducida de 80×60 píxeles en la que la primera dimensión representa el color y las dos restantes representan la posición del pixel. Realizar una función que muestre la pantalla de color azul con un rectángulo que empieza en el pixel (20,30) de 10 puntos de ancho, con ese lado de color verde, y 20 puntos de alto, con ese lado de color rojo. Para mostrar el resultado imprima cada página de color por separado. En la de color azul tiene que aparecer una `B` en cada posición que va pintada y cero en las posiciones que son de otro color. Lo mismo se hace con el color verde poniendo una `G` y con el color rojo poniendo una `R`.
+
+8) Genere las tablas de multiplicar en una tabla de doble entrada. Crear una función que permita elegir qué rango de la tabla se quiere mostrar (Ej.: Mostrar la tabla del 3).
+
+### Actividades extra
+
+1) En una competencia de ciclismo intervienen N deportistas, cada uno realiza dos pruebas, una por tiempo y otra por número de vueltas. Se tienen tres arreglos con los siguientes datos de cada participante: nombre, tiempo en la primera prueba y número de vueltas en la segunda prueba. Imprimir en pantalla 5 columnas en las que se muestre para cada participante: nombre, tiempo en la primera prueba, número de vueltas en la segunda prueba, diferencia de tiempo respecto del más rápido en la primera prueba y diferencia de vueltas respecto del que hizo más vueltas en la segunda prueba.
+
+2) Genere una matriz cuadrada M a partir de un vector V de N elementos enteros no nulos. Luego, imprímala en pantalla.
+
+---
 
 ## Ejercicios de Exámenes Anteriores
 
@@ -127,7 +145,13 @@ El programa debe respetar conceptos de modularidad, sin warnings ni errores. Se 
 
 ### [Recu. 1er Parcial] Práctica - Matriz de 3×5 y operaciones matriciales
 
-Escriba un programa en lenguaje C que pida al usuario tres conjuntos de cinco números flotantes cada uno y cumpla con todo lo que sigue. Utilizar como datos: `{{2.14, 4.56, 6.54, 9.87, 3.21}, {5.43, 4.32, 7.65, 1.23, 3.56}, {4.87, 9.32, 4.67, 8.76, 2.78}}`.
+Escriba un programa en lenguaje C que pida al usuario tres conjuntos de cinco números flotantes cada uno y cumpla con todo lo que sigue. Utilizar como datos:
+
+```c
+{{2.14, 4.56, 6.54, 9.87, 3.21},
+ {5.43, 4.32, 7.65, 1.23, 3.56},
+ {4.87, 9.32, 4.67, 8.76, 2.78}}
+```
 
 a) Almacenar los datos en una matriz de 3×5.
 
@@ -160,6 +184,7 @@ Presione un número para seleccionar la operación deseada:
 La opción 4 debe imprimir la matriz de colores en hexadecimal con las columnas alineadas. La salida debe ser confirmada.
 
 Para probar se utilizan los siguientes valores (componentes BB GG RR 00):
+
 ```c
 unsigned int memory[] = {
     0x3d2e1f00, 0xff000000, 0x00ff0000, 0x0000ff00,
@@ -191,11 +216,13 @@ Presione un número para seleccionar la operación deseada:
 - La opción 4 debe solicitar las coordenadas del pixel a modificar (validadas), y permitir intercambiar: RR↔BB, RR↔GG o BB↔GG. Debe imprimirse la matriz original y la versión modificada. La salida debe ser confirmada.
 
 Para probar se utilizará:
+
 ```c
 int colores[3][4] = {2043453, 255, 65280, 16711680,
                      11189196, 1056816, 15852243, 2241365,
                      2311527, 9008675, 10836662, 16702650};
 ```
+
 Cada color se almacena en memoria con sus componentes BB GG RR 00.
 
 ---

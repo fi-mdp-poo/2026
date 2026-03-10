@@ -1,5 +1,5 @@
 # Guía de Integración - Exámenes Completos
-## Materia: Programación I
+## Materia: Programación 1
 
 > Esta guía contiene los exámenes completos de años anteriores organizados cronológicamente. Está pensada para la preparación integral antes de cada instancia evaluativa.
 >
