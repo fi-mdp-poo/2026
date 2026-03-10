@@ -1,6 +1,6 @@
-# Guías de Trabajos Prácticos — Programación Orientada a Objetos (POO)
+# Guías de Trabajos Prácticos — Programación 3
 
-Guías de ejercicios de la materia **Programación III** (Programación Orientada a Objetos en C++) de la Facultad de Ingeniería, Universidad Nacional de Mar del Plata.
+Guías de ejercicios de la materia **Programación 3** (Programación Orientada a Objetos en C++) de la Facultad de Ingeniería, Universidad Nacional de Mar del Plata.
 
 ## Guías por Unidad
 

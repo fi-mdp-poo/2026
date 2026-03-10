@@ -1,6 +1,6 @@
-# Guías de Trabajos Prácticos — Programación Estructurada (PE)
+# Guías de Trabajos Prácticos — Programación 1
 
-Guías de ejercicios de la materia **Programación I** (Programación Estructurada en C) de la Facultad de Ingeniería, Universidad Nacional de Mar del Plata.
+Guías de ejercicios de la materia **Programación 1** (Programación Estructurada en C) de la Facultad de Ingeniería, Universidad Nacional de Mar del Plata.
 
 ## Guías por Unidad
 
