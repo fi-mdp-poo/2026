@@ -25,6 +25,8 @@ Ejercicios
 
 4) Modifique el programa del ejercicio 3 para poder reemplazar un string ingresado por teclado dentro del string s. Se debe controlar que la cadena ingresada por teclado exista dentro de la cadena s. ¿Qué sucede con el tamaño del string s si la cadena a reemplazar tiene un tamaño igual o menor que el de la cadena reemplazada? ¿ Aumenta, disminuye o se mantiene el tamaño de s? ¿Se le ocurre un caso en el que el reemplazo haga que el tamaño de s pueda aumentar?
 5) El siguiente listado es un programa de prueba llamado test.cpp para probar el funcionamiento de una clase denominada CRacional. Copie el código en su IDE favorito y a continuación, haga que compile sin advertencias y ejecute.
+
+```cpp
 #include <iostream>
 #include "racional.h"
 using namespace std;
@@ -85,6 +87,7 @@ int main()
   system("pause"); 
   return 0;
 }
+```
 
 6) La imagen que sigue muestra la declaración de una clase string básica. Se pide el código que implemente esa clase y un programa de prueba que demuestre su funcionamiento.
 

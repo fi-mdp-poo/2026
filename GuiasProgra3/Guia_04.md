@@ -62,9 +62,69 @@ int main()
 
 ---
 
-### [1er Parcial 2022] Práctica - Clase cRadioReloj con herencia múltiple (ver Guía 2)
+### [1er Parcial 2022] Práctica - Clase cRadioReloj con herencia múltiple
 
-Implementar las clases `cReloj`, `cRadio`, `cRadioReloj` y `cTime` tal como se describe en el ejercicio de la Guía 2, haciendo foco en la correcta implementación de la herencia múltiple (`cRadioReloj : public cRadio, public cReloj`) y en la resolución de ambigüedades que puedan surgir.
+Escriba un programa en lenguaje C++ que permita ejecutar el conjunto de sentencias mostradas en el siguiente `main()` (almacenado en `main.cpp`):
+
+```cpp
+#include "cRadioReloj.h"
+
+int main()
+{
+    cReloj clock1,           // por defecto: 0 0 0
+           clock2(3, 4, 50),
+           clock3(clock2);
+
+    clock1.setTiempo(23, 58, 59);
+    clock1.setMarca("primero");
+    clock2.setMarca("segundo");
+    clock3.setMarca("reloj copiado");
+
+    cRadio radio1,           // por defecto: 95.5 FM false
+           radio2(103.3),
+           radio3(860.0, AM),
+           radio4(radio3);
+
+    radio4.setPrendido(true);
+
+    cRadioReloj alarma1(cTime(23, 59, 59)),
+                alarma2(clock1.getTiempo(), cTime(8, 29, 58));
+
+    alarma1.setPrendido(true);
+    alarma1.setAlarma(12, 59, 59);
+    alarma2.setBanda(AM);
+
+    alarma1.incrementarTiempo();
+    cTime tiempo = alarma1.getTiempo();
+    cout << "Hora mostrada en la radio_alarma1: " << tiempo << '\n';
+
+    alarma2.incrementarTiempo();
+    tiempo = alarma2.getTiempo();
+    cout << "Hora mostrada en la radio_alarma2: " << tiempo << '\n';
+
+    alarma2.incrementarTiempo();
+    tiempo = alarma2.getTiempo();
+    cout << "Hora mostrada en la radio_alarma2: " << tiempo << '\n';
+
+    if(alarma1.verificarAlarma())
+        cout << "La alarma 1 esta prendida" << endl;
+    else
+        cout << "La alarma 1 esta apagada" << endl;
+
+    return 0;
+}
+```
+
+Las clases involucradas tienen los siguientes atributos privados/protected:
+
+```cpp
+class cReloj { cTime time; char *marca; };
+class cRadio { float frecuencia; TipoDeBanda banda; bool prendido; };
+class cRadioReloj : public cRadio, public cReloj { cTime alarma; TipoAlarma tipo; bool prendido; };
+class cTime { unsigned int hora, minuto, segundo; };
+```
+
+Se debe realizar correcta modularización. El programa debe compilar sin errores ni warnings. Gestionar adecuadamente el uso de la memoria dinámica.
 
 ---
 
@@ -72,9 +132,9 @@ Implementar las clases `cReloj`, `cRadio`, `cRadioReloj` y `cTime` tal como se d
 
 Implementar dos ejercicios en el mismo examen:
 
-**Ejercicio 1:** Implementar las clases `CTermino` y `CPolinomio` tal como se describe en la Guía 1, asegurando que el programa compile sin errores a partir del `main()` dado. La suma de polinomios debe producir: `5x⁵ + 7x² – x + 5.25`.
+**Ejercicio 1:** Implementar las clases `CTermino` y `CPolinomio` tal como se describe en la Guía 3, asegurando que el programa compile sin errores a partir del `main()` dado. La suma de polinomios debe producir: `5x⁵ + 7x² – x + 5.25`.
 
-**Ejercicio 2:** Implementar las clases `cReloj`, `cRadio`, `cRadioReloj` y `cTime` tal como se describe en la Guía 2.
+**Ejercicio 2:** Implementar las clases `cReloj`, `cRadio`, `cRadioReloj` y `cTime` tal como se describe más arriba en esta guía.
 
 ---
 

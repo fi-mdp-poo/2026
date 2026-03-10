@@ -23,10 +23,3 @@ Cada guía incluye:
 1. **Preguntas orientadoras** — conceptos teóricos para repasar antes de resolver los ejercicios.
 2. **Ejercicios de práctica** — problemas progresivos para implementar en C.
 3. **Ejercicios de exámenes anteriores** — enunciados reales de parciales y recuperatorios.
-
-## Distribución por parcial
-
-| Instancia | Unidades |
-|-----------|----------|
-| **1er Parcial** | Unidades 1–5 (introducción, tipos/E-S, funciones, estructuras de control, arreglos) |
-| **2do Parcial** | Unidades 6–7 (punteros/memoria dinámica, archivos, structs/unions) |

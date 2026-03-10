@@ -17,7 +17,10 @@ Ejercicios
 1) Genere un proyecto de Consola de C++ y comente las diferencias y similitudes que nota con un proyecto de consola de C.
 2) Escriba una función en C++ que permita intercambiar los valores de dos variables enteras pasadas por referencias desde el main. Este problema ya se resolvió en programación estructurada usando punteros. ¿Cuál es la diferencia entre un puntero y una referencia? ¿Le resultó más fácil la implementación usando las referencias?.
 3) El siguiente fragmento de código muestra cómo almacenar el resultado de la división entre dos números enteros. Escriba dicha conversión en lenguaje C++:
-int a,b; float r; a=5; b=2; r = (float) a /b;
+
+```c
+int a, b; float r; a = 5; b = 2; r = (float) a / b;
+```
 4) Realice un programa que permita saber las veces que una función fue invocada desde el programa principal. 
 5) Implementar un TDA llamado Vehículo, organizando la definición en un archivo de cabecera y su implementación en un archivo .c. Utilice una estructura que contenga campos para representar los atributos del Vehículo: marca, puertas, kilometraje y cilindrada y punteros a funciones: "getters" y "setters" para acceder a los atributos antes mencionados y algunas acciones que puede realizar el Vehículo: acelerar, frenar, prender, apagar. Además, son necesarias dos funciones encargadas de reservar y liberar memoria de forma dinámica: crearVehículo y destruirVehículo.
 6) Implementar el mismo TDA del ejercicio 5, pero ahora usando una clase (class) y una estructura (struct) de C++. ¿Qué diferencias y qué similitudes nota entre una "class y una struct de C++? ¿Y entre una struct de C y una de C++? ¿Experimente con los modificadores de acceso sobre métodos y atributos? ¿Le resultó más fácil implementar el TDA en C++? ¿Por qué?
@@ -43,41 +46,3 @@ d) Indique qué se entiende por tipo de dato reference y cuáles son sus princip
 
 e) Indique qué se entiende por `namespaces` (espacios de nombres). ¿Cómo se utiliza?
 
----
-
-### [1er Parcial 2017] Práctica - Clase CPolinomio con operadores sobrecargados
-
-Se requiere escribir un programa para manipular ecuaciones algebraicas dependientes de una variable. Ejemplo:
-
-```
-2x³ – x + 8.25  +  5x⁵ – 2x³ + 7x² – 3  =  5x⁵ + 7x² – x + 5.25
-```
-
-Cada término del polinomio será representado por una clase `CTermino` (atributos privados: `coeficiente` float, `exponente` int) y cada polinomio por una clase `CPolinomio`.
-
-La clase `CTermino` debe permitir al menos:
-- Construir un término iniciado a 0 por omisión.
-- Acceder al coeficiente y al exponente.
-- Sobrecargar `==`, `>` y `<` para comparar por grado.
-- Sobrecargar el operador `<<` para mostrar en formato `{+|-}ax^exp` (ej: `-7x^3`).
-
-La clase `CPolinomio` debe permitir al menos:
-- Construir un polinomio con cero términos.
-- Obtener el número de términos.
-- Agregar términos ordenados por exponente ascendente. Si el término existe, sumar coeficientes. Si el coeficiente es nulo, no realizar operación.
-- Sobrecargar el operador `+`.
-- Sobrecargar `<<` para mostrar en formato: `+ 5x^5 – 1x^1 + 5.25`.
-- Sobrecargar el operador `()` para evaluar el polinomio en un valor x (retorna `double`).
-- Sobrecargar el operador de conversión a `double` (evalúa en x=1).
-- Sobrecargar el operador `*` para pre y post multiplicar por un `float`.
-
-La salida esperada del programa de prueba es:
-```
-Polinomio A:  - 3x^2 + 2x^1 + 6
-Polinomio B:  + 8x^2 - 2x^1 - 6
-Polinomio R:  + 5x^2
-valor del polinomio para x = 5: 125
-valor del polinomio para x = 1: 5
-PolinomioA * 2.5 = - 7.5x^2 + 5x^1 + 15
--1.5 * PolinomioR = -7.5x^2
-```
